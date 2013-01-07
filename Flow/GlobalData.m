@@ -24,7 +24,6 @@
     if (self) {
         _pointRecorders = [NSMutableArray arrayWithCapacity:10];
         _starEndIndexes = [NSMutableSet setWithCapacity:10];
-        _validIndexes = [NSMutableSet setWithCapacity:10];
         for (kPointType index = 0; index < 4; index++) {
             PointRecorder *pointRecorder = [[PointRecorder alloc] initWithType:index];
             [_pointRecorders addObject:pointRecorder];
@@ -44,17 +43,11 @@
     [_pointRecorders enumerateObjectsUsingBlock:^(PointRecorder *pointRecorder, NSUInteger idx, BOOL *stop) {
         if (pointRecorder.startIndex == index) {
             *stop = YES;
-            [_validIndexes addObjectsFromArray:pointRecorder.movingIndexes];
             [pointRecorder.movingIndexes removeAllObjects];
-            [_validIndexes removeObject:@(pointRecorder.startIndex)];
-            [_validIndexes removeObject:@(pointRecorder.endIndex)];
         }else if (pointRecorder.endIndex == index){
             pointRecorder.endIndex = pointRecorder.startIndex;
             pointRecorder.startIndex = index;
             *stop = YES;
-            [_validIndexes addObjectsFromArray:pointRecorder.movingIndexes];
-            [_validIndexes removeObject:@(pointRecorder.startIndex)];
-            [_validIndexes removeObject:@(pointRecorder.endIndex)];
             [pointRecorder.movingIndexes removeAllObjects];
         }else{
             NSUInteger location = [pointRecorder.movingIndexes indexOfObject:@(index)];

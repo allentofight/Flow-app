@@ -110,10 +110,8 @@
 				58CDE1AB169460F700BFAF4C /* AppDelegate.m */,
 				58CDE1B3169460F700BFAF4C /* MainStoryboard_iPhone.storyboard */,
 				58CDE1B6169460F700BFAF4C /* MainStoryboard_iPad.storyboard */,
-				58B5BFA31697F7B700BC7952 /* forward.caf */,
 				58CDE1B9169460F700BFAF4C /* ViewController.h */,
 				58CDE1BA169460F700BFAF4C /* ViewController.m */,
-				589FD84816980C27001D1E02 /* flow.caf */,
 				58CDE1DB169470FC00BFAF4C /* GlobalData.h */,
 				58CDE1DC169470FC00BFAF4C /* GlobalData.m */,
 				58CDE1C4169464EC00BFAF4C /* ChessBoard.h */,
@@ -128,6 +126,8 @@
 		58CDE1A2169460F700BFAF4C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				58B5BFA31697F7B700BC7952 /* forward.caf */,
+				589FD84816980C27001D1E02 /* flow.caf */,
 				58CDE1A3169460F700BFAF4C /* Flow-Info.plist */,
 				58CDE1A4169460F700BFAF4C /* InfoPlist.strings */,
 				58CDE1A7169460F700BFAF4C /* main.m */,
