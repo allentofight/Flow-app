@@ -7,7 +7,6 @@
 //
 
 #import "ChessBoard.h"
-#import "UIViewAddition.h"
 #import "PointRecorder.h"
 #import "GlobalData.h"
 #import <QuartzCore/QuartzCore.h>
@@ -218,7 +217,7 @@
         CGContextAddLineToPoint(context, 319, Index*64);
         
         CGContextMoveToPoint(context, Index*64, 0);
-        CGContextAddLineToPoint(context, Index*64, self.height);        
+        CGContextAddLineToPoint(context, Index*64, self.frame.size.height);
     }
         CGContextStrokePath(context);
 

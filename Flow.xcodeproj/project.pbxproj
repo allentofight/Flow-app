@@ -26,7 +26,6 @@
 		58CDE1C31694612C00BFAF4C /* PointRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CDE1C21694612C00BFAF4C /* PointRecorder.m */; };
 		58CDE1C6169464EC00BFAF4C /* ChessBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CDE1C5169464EC00BFAF4C /* ChessBoard.m */; };
 		58CDE1C8169465ED00BFAF4C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CDE1C7169465ED00BFAF4C /* QuartzCore.framework */; };
-		58CDE1DA16946EFF00BFAF4C /* UIViewAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CDE1D916946EFE00BFAF4C /* UIViewAddition.m */; };
 		58CDE1DD169470FC00BFAF4C /* GlobalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CDE1DC169470FC00BFAF4C /* GlobalData.m */; };
 /* End PBXBuildFile section */
 
@@ -58,8 +57,6 @@
 		58CDE1C4169464EC00BFAF4C /* ChessBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChessBoard.h; sourceTree = "<group>"; };
 		58CDE1C5169464EC00BFAF4C /* ChessBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChessBoard.m; sourceTree = "<group>"; };
 		58CDE1C7169465ED00BFAF4C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		58CDE1D816946EFE00BFAF4C /* UIViewAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAddition.h; sourceTree = "<group>"; };
-		58CDE1D916946EFE00BFAF4C /* UIViewAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAddition.m; sourceTree = "<group>"; };
 		58CDE1DB169470FC00BFAF4C /* GlobalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalData.h; sourceTree = "<group>"; };
 		58CDE1DC169470FC00BFAF4C /* GlobalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,8 +123,6 @@
 				580C9C051695C90C006E201C /* Utility.m */,
 				58CDE1C4169464EC00BFAF4C /* ChessBoard.h */,
 				58CDE1C5169464EC00BFAF4C /* ChessBoard.m */,
-				58CDE1D816946EFE00BFAF4C /* UIViewAddition.h */,
-				58CDE1D916946EFE00BFAF4C /* UIViewAddition.m */,
 				58CDE1C11694612C00BFAF4C /* PointRecorder.h */,
 				58CDE1C21694612C00BFAF4C /* PointRecorder.m */,
 				58CDE1A2169460F700BFAF4C /* Supporting Files */,
@@ -223,7 +218,6 @@
 				58CDE1BB169460F700BFAF4C /* ViewController.m in Sources */,
 				58CDE1C31694612C00BFAF4C /* PointRecorder.m in Sources */,
 				58CDE1C6169464EC00BFAF4C /* ChessBoard.m in Sources */,
-				58CDE1DA16946EFF00BFAF4C /* UIViewAddition.m in Sources */,
 				58CDE1DD169470FC00BFAF4C /* GlobalData.m in Sources */,
 				580C9C061695C90C006E201C /* Utility.m in Sources */,
 			);
