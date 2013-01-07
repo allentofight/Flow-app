@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		580C9C061695C90C006E201C /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 580C9C051695C90C006E201C /* Utility.m */; };
 		589FD84916980C27001D1E02 /* flow.caf in Resources */ = {isa = PBXBuildFile; fileRef = 589FD84816980C27001D1E02 /* flow.caf */; };
 		58B5BFA41697F7B700BC7952 /* forward.caf in Resources */ = {isa = PBXBuildFile; fileRef = 58B5BFA31697F7B700BC7952 /* forward.caf */; };
 		58B5BFA71697F83B00BC7952 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B5BFA61697F83B00BC7952 /* AudioToolbox.framework */; };
@@ -30,8 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		580C9C041695C90C006E201C /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
-		580C9C051695C90C006E201C /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		589FD84816980C27001D1E02 /* flow.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = flow.caf; sourceTree = "<group>"; };
 		58B5BFA31697F7B700BC7952 /* forward.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = forward.caf; sourceTree = "<group>"; };
 		58B5BFA61697F83B00BC7952 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -119,8 +116,6 @@
 				589FD84816980C27001D1E02 /* flow.caf */,
 				58CDE1DB169470FC00BFAF4C /* GlobalData.h */,
 				58CDE1DC169470FC00BFAF4C /* GlobalData.m */,
-				580C9C041695C90C006E201C /* Utility.h */,
-				580C9C051695C90C006E201C /* Utility.m */,
 				58CDE1C4169464EC00BFAF4C /* ChessBoard.h */,
 				58CDE1C5169464EC00BFAF4C /* ChessBoard.m */,
 				58CDE1C11694612C00BFAF4C /* PointRecorder.h */,
@@ -219,7 +214,6 @@
 				58CDE1C31694612C00BFAF4C /* PointRecorder.m in Sources */,
 				58CDE1C6169464EC00BFAF4C /* ChessBoard.m in Sources */,
 				58CDE1DD169470FC00BFAF4C /* GlobalData.m in Sources */,
-				580C9C061695C90C006E201C /* Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
