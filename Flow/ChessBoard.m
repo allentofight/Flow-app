@@ -20,48 +20,13 @@
     BOOL        _isMoving;
 }
 
-
-- (void)outLineTheBoard{
-    CAShapeLayer *lineShape = nil;
-    CGMutablePathRef linePath = nil;
-    linePath = CGPathCreateMutable();
-    lineShape = [CAShapeLayer layer];
-    lineShape.lineWidth = 1.0f;
-    lineShape.lineCap = kCALineCapRound;;
-    lineShape.strokeColor = [UIColor redColor].CGColor;
-
-    for (int Index = 0; Index < 6; Index++) {
-        CGPathMoveToPoint(linePath, NULL, 1, Index*64);
-        CGPathAddLineToPoint(linePath, NULL, 319, Index*64);
-        
-        CGPathMoveToPoint(linePath, NULL, Index*64, 0);
-        CGPathAddLineToPoint(linePath, NULL, Index*64, self.height);
-    }
-    lineShape.path = linePath;
-    CGPathRelease(linePath);
-    [self.layer addSublayer:lineShape];
-}
-
 - (id)initWithCoder:(NSCoder *)coder{
     self = [super initWithCoder:coder];
     if (self) {
-        [self outLineTheBoard];
         UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureReconized:)];
         [self addGestureRecognizer:panGesture];
     }
     return self;
-}
-
-//Draw ChessBoard Lines
-- (void)initBezierPathAndPattern{
-    _drawPaths = [NSMutableArray arrayWithCapacity:10];
-    for (int index = 0; index < 4; index++) {
-        UIBezierPath *bezierPath = [[UIBezierPath alloc] init];
-        bezierPath.lineCapStyle=kCGLineCapRound;
-        bezierPath.miterLimit=0;
-        bezierPath.lineWidth=10;
-        [_drawPaths addObject:bezierPath];
-    }
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
@@ -244,13 +209,24 @@
         }
 
     }];
-    
+}
+
+- (void)drawTheOutLine:(CGContextRef)context{
+    CGContextSetStrokeColorWithColor(context, [UIColor greenColor].CGColor);
+    for (int Index = 0; Index < 6; Index++) {
+        CGContextMoveToPoint(context, 1, Index*64);
+        CGContextAddLineToPoint(context, 319, Index*64);
+        
+        CGContextMoveToPoint(context, Index*64, 0);
+        CGContextAddLineToPoint(context, Index*64, self.height);        
+    }
+        CGContextStrokePath(context);
 
 }
 
 - (void)drawRect:(CGRect)rect{
     CGContextRef context = UIGraphicsGetCurrentContext();
-
+    [self drawTheOutLine:context];
     [self drawTheLineDotsIn:context]; 
 }
 
