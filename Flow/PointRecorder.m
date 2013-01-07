@@ -83,9 +83,6 @@
     return NO;
 }
 
-- (void)clearMovingStatus{
-    _moving = NO;
-}
 
 #define GlobalInstance [GlobalData sharedInstance]
 - (id)initWithType:(kPointType)type{

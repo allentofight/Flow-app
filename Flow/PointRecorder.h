@@ -20,7 +20,6 @@ typedef enum{
 @property (nonatomic, strong) NSMutableArray *finalIndexes;
 @property (nonatomic, strong) NSMutableArray *movingIndexes;
 @property (nonatomic, assign) kPointType pointType;
-@property (nonatomic, assign) BOOL moving;
 - (id)initWithType:(kPointType)type;
 +(NSInteger)pointToIndex:(CGPoint)touchPoint;
 +(CGRect)indexToRect:(NSInteger)index;

@@ -39,7 +39,6 @@
 }
 
 - (PointRecorder *)pointRecorderForStartIndex:(NSInteger)index{
-    [_pointRecorders makeObjectsPerformSelector:@selector(clearMovingStatus)];
     [_pointRecorders enumerateObjectsUsingBlock:^(PointRecorder *pointRecorder, NSUInteger idx, BOOL *stop) {
         if (pointRecorder.startIndex == index) {
             *stop = YES;

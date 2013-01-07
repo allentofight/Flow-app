@@ -83,7 +83,6 @@
         case UIGestureRecognizerStateEnded:{
             NSMutableArray *movingIndexes = GlobalInstance.curMovingPointRecorder.movingIndexes;
             PointRecorder *curMovingPointRecorder = GlobalInstance.curMovingPointRecorder;
-            GlobalInstance.curMovingPointRecorder.moving = NO;
             if ([movingIndexes containsObject:@(curMovingPointRecorder.startIndex)] && [movingIndexes containsObject:@(curMovingPointRecorder.endIndex)]) {
                 [self playConnectedLineSound];
             }
